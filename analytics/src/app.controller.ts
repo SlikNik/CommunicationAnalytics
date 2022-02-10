@@ -1,4 +1,4 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 import { EventPattern, MessagePattern } from '@nestjs/microservices';
 import { AppService } from './app.service';
 import { CreateUserEvent } from './create-user.event';
