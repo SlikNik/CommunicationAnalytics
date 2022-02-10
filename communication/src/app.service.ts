@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import console from 'console';
 import { CreateUserEvent } from './create-user.event';
 
 @Injectable()
@@ -8,8 +7,8 @@ export class AppService {
     return 'Hello World!';
   }
 
-  handleUserCreated(data: CreateUserEvent) {
+  handleUserCreated(data: CreateUserEvent): void {
     console.log('handleUserCreated - COMMUNICATIONS', data);
-    //TODO: Email User......
+    //TODO Email User......
   }
 }

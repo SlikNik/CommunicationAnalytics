@@ -13,7 +13,7 @@ export class AppController {
   }
 
   @EventPattern('user_created')
-  handleUserCreated(data: CreateUserEvent) {
+  handleUserCreated(data: CreateUserEvent): void {
     this.appService.handleUserCreated(data);
   }
 }
