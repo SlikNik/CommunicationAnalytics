@@ -6,7 +6,7 @@ export class AppService {
   private readonly analytics: any[] = [];
 
   getHello(): string {
-    return 'Hello World!';
+    return 'Welcome to Analytics!';
   }
 
   handleUserCreated(data: CreateUserEvent): void {
@@ -15,5 +15,9 @@ export class AppService {
       email: data.email,
       timestamp: new Date(),
     });
+  }
+
+  getAnalytics() {
+    return this.analytics;
   }
 }
